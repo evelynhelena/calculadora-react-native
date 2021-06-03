@@ -8,7 +8,7 @@ function Buttons(props) {
   if (props.triple) stylesButton.push(styles.buttonTriple);
   if (props.operation) stylesButton.push(styles.buttonOperation);
   return (
-    <TouchableHighlight>
+    <TouchableHighlight onPress={props.action}>
       <Text style={stylesButton}>{props.label}</Text>
     </TouchableHighlight>
   );
